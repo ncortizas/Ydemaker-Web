@@ -1,0 +1,135 @@
+/* Color Theme Swatches in Hex */
+.Hourglass-on-dark-background-1-hex { color: #232526; }
+.Hourglass-on-dark-background-2-hex { color: #A69580; }
+.Hourglass-on-dark-background-3-hex { color: #F2F2F2; }
+.Hourglass-on-dark-background-4-hex { color: #595959; }
+.Hourglass-on-dark-background-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.Hourglass-on-dark-background-1-rgba { color: rgba(35, 36, 38, 1); }
+.Hourglass-on-dark-background-2-rgba { color: rgba(165, 148, 127, 1); }
+.Hourglass-on-dark-background-3-rgba { color: rgba(242, 242, 242, 1); }
+.Hourglass-on-dark-background-4-rgba { color: rgba(89, 89, 89, 1); }
+.Hourglass-on-dark-background-5-rgba { color: rgba(12, 12, 12, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Hourglass-on-dark-background-1-hsla { color: hsla(213, 4, 14, 1); }
+.Hourglass-on-dark-background-2-hsla { color: hsla(33, 17, 57, 1); }
+.Hourglass-on-dark-background-3-hsla { color: hsla(0, 0, 95, 1); }
+.Hourglass-on-dark-background-4-hsla { color: hsla(0, 0, 35, 1); }
+.Hourglass-on-dark-background-5-hsla { color: hsla(0, 0, 5, 1); }
+
+
+/* font-family: 'Nunito Sans', sans-serif;
+font-family: 'Old Standard TT', serif; */
+
+
+
+.logo{
+    float: left;
+    margin: 20px 40px;
+}
+
+
+span .fa{
+    font-size: 1.8em;
+    position: relative;
+    float: left; 
+    text-align: center;
+    color: #232526;
+    z-index: 1;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999999;
+    left:0;
+    top:0;
+    background-color: #232526;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-links{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+.overlay-links a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 40px;
+    color:#F2F2F2;
+    font-family: 'Old Standard TT', serif; 
+    transition: 0.5s;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+    color: #f2f2f2;
+    z-index: 99999;
+}
+
+#social-nav  {
+   margin-top: 40px;
+   position: absolute;
+   right: 25px;
+   top:20px;
+   
+}
+
+#social-nav a{
+    font-size: 20px;
+   
+}
+
+
+/* Animate links menu */
+
+.overlay-links a:hover{
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color:#A69580;
+}
+
+.fa:hover{
+    font-weight: bold;
+    color:#A69580;
+
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (max-height:450px){
+    .overlay a{
+        font-size: 18px;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top:15px;
+        right:35px;
+    }
+    #social-nav {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    header{
+        margin: 0;
+    }
+}

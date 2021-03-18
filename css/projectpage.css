@@ -1,0 +1,259 @@
+
+
+/* Color Theme Swatches in Hex */
+.Hourglass-on-dark-background-1-hex { color: #232526; }
+.Hourglass-on-dark-background-2-hex { color: #A69580; }
+.Hourglass-on-dark-background-3-hex { color: #F2F2F2; }
+.Hourglass-on-dark-background-4-hex { color: #e2e2e2; }
+.Hourglass-on-dark-background-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.Hourglass-on-dark-background-1-rgba { color: rgba(35, 36, 38, 1); }
+.Hourglass-on-dark-background-2-rgba { color: rgba(165, 148, 127, 1); }
+.Hourglass-on-dark-background-3-rgba { color: rgba(242, 242, 242, 1); }
+.Hourglass-on-dark-background-4-rgba { color: rgba(89, 89, 89, 1); }
+.Hourglass-on-dark-background-5-rgba { color: rgba(12, 12, 12, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Hourglass-on-dark-background-1-hsla { color: hsla(213, 4, 14, 1); }
+.Hourglass-on-dark-background-2-hsla { color: hsla(33, 17, 57, 1); }
+.Hourglass-on-dark-background-3-hsla { color: hsla(0, 0, 95, 1); }
+.Hourglass-on-dark-background-4-hsla { color: hsla(0, 0, 35, 1); }
+.Hourglass-on-dark-background-5-hsla { color: hsla(0, 0, 5, 1); }
+
+
+/* font-family: 'Nunito Sans', sans-serif;
+font-family: 'Old Standard TT', serif; */
+
+body{
+    color: #232526;
+}
+
+.content-wrapper {
+    margin: 50px 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+
+  }
+  
+  .split-left {
+      padding: 30px;
+      margin-right: 15px;
+      float: left;
+      width: 40%;
+  }
+
+  .split-left h1{
+    font-family: 'Old Standard TT', serif;
+    font-size: 5em;
+    margin-bottom: 15px;
+    color:#A69580;
+  
+      
+  }
+  
+  h4{
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  
+   
+
+  }
+
+  h5{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+  }
+
+  hr{
+    border:solid #A69580 2px;
+    width: 75%;
+    margin: 20px 0;
+  }
+
+  p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    width: 95%;
+    margin-bottom: 20px;
+  }
+
+ .split-right {
+     display: flex;
+     flex-direction: column;
+     overflow-y: scroll;
+     height: 70vh;
+     float: right;
+     width: 60%;
+     margin-top: 50px;
+  }
+  
+  .split-right img{
+      padding: 10px;
+      margin-bottom: 40px;
+      width: 90%;
+      
+  }
+  #mail{
+    font-family: 'Old Standard TT', serif;
+    font-size: 2em;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #A69580;
+  
+  }
+  
+  #mail:hover{
+    color: #F2F2F2;
+  }
+  
+
+
+
+  /* MEDIA QUERYS CSS */
+ /* ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  /* Styles */
+    .content-wrapper{
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+      padding: 5px;
+    }
+
+    .split-right{
+      width: 100%
+    }
+
+    .split-left{
+      width: 100%;
+      letter-spacing: 0.05em;
+    }
+
+    .split-left h1{
+      font-size: 1.8em;
+    }
+    .split-left h4{
+      font-size: 1.2em;
+    }
+
+    .split-left h5{
+      line-height: 1.5em;
+    }
+
+  }
+  
+
+  
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  /* Styles */
+  .content-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .split-right{
+    width: 100%
+  }
+
+  .split-left{
+    width: 100%;
+    letter-spacing: 0.05em;
+  }
+
+  .split-left h1{
+    font-size: 1.8em;
+  }
+  .split-left h4{
+    font-size: 1.2em;
+  }
+
+  .split-left h5{
+    line-height: 1.5em;
+  }
+  }
+ 
+
+  /**********
+  iPad 3
+  **********/
+
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+  /* Styles */
+  .content-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .split-right{
+    width: 100%
+  }
+
+  .split-left{
+    width: 100%;
+    letter-spacing: 0.05em;
+  }
+
+  .split-left h1{
+    font-size: 1.8em;
+  }
+  .split-left h4{
+    font-size: 1.2em;
+  }
+
+  .split-left h5{
+    line-height: 1.5em;
+  }
+
+  }
+  
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+  /* Styles */
+  .content-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .split-right{
+    width: 100%
+  }
+
+  .split-left{
+    width: 100%;
+    letter-spacing: 0.05em;
+  }
+
+  .split-left h1{
+    font-size: 1.8em;
+  }
+  .split-left h4{
+    font-size: 1.2em;
+  }
+
+  .split-left h5{
+    line-height: 1.5em;
+  }
+
+  }
+
+
+  

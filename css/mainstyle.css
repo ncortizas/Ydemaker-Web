@@ -1,0 +1,356 @@
+
+
+/* Color Theme Swatches in Hex */
+.Hourglass-on-dark-background-1-hex { color: #232526; }
+.Hourglass-on-dark-background-2-hex { color: #A69580; }
+.Hourglass-on-dark-background-3-hex { color: #F2F2F2; }
+.Hourglass-on-dark-background-4-hex { color: #e2e2e2; }
+.Hourglass-on-dark-background-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.Hourglass-on-dark-background-1-rgba { color: rgba(35, 36, 38, 1); }
+.Hourglass-on-dark-background-2-rgba { color: rgba(165, 148, 127, 1); }
+.Hourglass-on-dark-background-3-rgba { color: rgba(242, 242, 242, 1); }
+.Hourglass-on-dark-background-4-rgba { color: rgba(89, 89, 89, 1); }
+.Hourglass-on-dark-background-5-rgba { color: rgba(12, 12, 12, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Hourglass-on-dark-background-1-hsla { color: hsla(213, 4, 14, 1); }
+.Hourglass-on-dark-background-2-hsla { color: hsla(33, 17, 57, 1); }
+.Hourglass-on-dark-background-3-hsla { color: hsla(0, 0, 95, 1); }
+.Hourglass-on-dark-background-4-hsla { color: hsla(0, 0, 35, 1); }
+.Hourglass-on-dark-background-5-hsla { color: hsla(0, 0, 5, 1); }
+
+
+/* font-family: 'Nunito Sans', sans-serif;
+font-family: 'Old Standard TT', serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+html{
+  box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100vw;
+    background-color: #f2f2f2;
+    scroll-behavior: smooth;
+
+}
+
+header{
+    width: 100%;
+    margin-bottom: 100px;
+    background-color: #F2F2F2;
+    height: 100px;
+    padding: 40px 10px;
+}
+
+header img{
+    float: left;
+    margin: 20px 40px;
+}
+
+header span{
+    float: right; 
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+span .fa{
+    font-size: 40px;
+    margin: 20px auto;
+ 
+
+}
+.emph {
+  color:#A69580;
+  font-weight: bold;
+}
+
+/* footer CSS */
+
+.footer{
+    background-color: #232526;
+    padding: 100px;
+    color: #F2F2F2;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+.adr {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.left{
+  padding: 20px;
+ 
+}
+
+#mail{
+  font-family: 'Old Standard TT', serif;
+  font-size: 3em;
+  margin-top: 40px;
+  text-decoration: none;
+  color: #A69580;
+
+}
+
+#mail:hover{
+  color: #F2F2F2;
+}
+
+.left h3{
+  font-size: 1.5em;
+}
+
+.sitemap{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-left: 50px;
+  margin-top: 10px;
+
+}
+.sitemap li{
+  list-style-type: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.sitemap a{
+  color: #A69580;
+
+
+}
+
+
+
+/* HERO SECTION OPENER */
+
+#hero {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#hero video{
+    position: absolute;
+    z-index: -1;
+    
+}
+
+#hero-btn a{
+    z-index: 666;
+    position: fixed;
+    top:80%;
+    left: 46%;
+    background-color: #232526;
+    color: #F2F2F2;
+    padding: 20px 40px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#hero-btn a:hover{
+    text-decoration: none;
+    background-color: #F2F2F2;
+    color: #232526;
+    letter-spacing: 1.1px;
+    font-weight: bold;
+    
+
+}
+
+/* MEDIA QUERYS */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    #hero video {
+        width: 100%;
+        height: auto;
+        
+    }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    #hero video {
+        width: 100%;
+        height: auto;
+        
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    #hero video {
+        width: auto;
+        height: 100%;
+        
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    #hero video {
+        width: 100%;
+        height: auto;
+        
+    }
+
+    
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    #hero video {
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .footer{
+      background-color: #232526;
+      width: 100%;
+  }
+  
+  
+  .adr {
+     width: 100%;
+     font-size: 1em;
+  }
+  
+  .left{
+    width: 100%;
+   
+  }
+  
+  #mail{
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.5em;
+  
+  }
+  
+  .left h3{
+    font-size: 1em;
+  }
+  
+  .sitemap{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    padding-left: 0;
+  
+  }
+
+    
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    #hero video {
+        width: auto;
+        height: 100%;
+        
+    }
+
+    .footer{
+      background-color: #232526;
+      width: 100%;
+      padding: 15px;
+  }
+  
+  
+  .adr {
+     width: 100%;
+     font-size: 1em;
+  }
+  
+  .left{
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .right {
+    width: 100%;
+  }
+  
+  #mail{
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.5em;
+  
+  }
+  
+  .left h3{
+    font-size: 1em;
+  }
+  
+  .sitemap{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    padding-left: 0;
+    padding-left: 20px;
+  
+  }
+
+
+    
+    
+  }

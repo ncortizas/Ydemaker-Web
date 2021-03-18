@@ -1,0 +1,179 @@
+
+/* Color Theme Swatches in Hex */
+.Hourglass-on-dark-background-1-hex { color: #232526; }
+.Hourglass-on-dark-background-2-hex { color: #A69580; }
+.Hourglass-on-dark-background-3-hex { color: #F2F2F2; }
+.Hourglass-on-dark-background-4-hex { color: #e2e2e2; }
+.Hourglass-on-dark-background-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.Hourglass-on-dark-background-1-rgba { color: rgba(35, 36, 38, 1); }
+.Hourglass-on-dark-background-2-rgba { color: rgba(165, 148, 127, 1); }
+.Hourglass-on-dark-background-3-rgba { color: rgba(242, 242, 242, 1); }
+.Hourglass-on-dark-background-4-rgba { color: rgba(89, 89, 89, 1); }
+.Hourglass-on-dark-background-5-rgba { color: rgba(12, 12, 12, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Hourglass-on-dark-background-1-hsla { color: hsla(213, 4, 14, 1); }
+.Hourglass-on-dark-background-2-hsla { color: hsla(33, 17, 57, 1); }
+.Hourglass-on-dark-background-3-hsla { color: hsla(0, 0, 95, 1); }
+.Hourglass-on-dark-background-4-hsla { color: hsla(0, 0, 35, 1); }
+.Hourglass-on-dark-background-5-hsla { color: hsla(0, 0, 5, 1); }
+
+
+/* font-family: 'Nunito Sans', sans-serif;
+font-family: 'Old Standard TT', serif; */
+
+.wrapper{
+    width: 100%;
+}
+
+.jumbotron{
+    background-color: #F2F2F2;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 75%;
+ 
+}
+
+.jumbotron h1 {
+    font-family: 'Old Standard TT', serif; 
+    font-size: 2.8em;
+    color: #232526;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.jumbotron h2{
+    font-size: 2em;
+    color: #A69580;
+    font-family: 'Old Standard TT', serif;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.jumbotron p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+
+}
+
+.text-left p{
+  width: 50%;
+
+}
+
+  /* GALLERY CSS */
+
+.gallery {
+  margin: 50px auto;
+  display: flex;
+
+}
+
+.card{
+  padding: 20px;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 50px;
+}
+
+.card-img-top{
+  margin-bottom: 30px;
+  border-radius: 6px;
+  height: 30vh;
+  object-fit: cover;
+
+}
+
+.card-title{
+  font-family: 'Old Standard TT', serif;
+  color: #A69580;
+  font-weight: bolder;
+  font-size: 1.8em;
+
+}
+
+.card-text{
+  font-family: 'Nunito Sans', sans-serif;
+  color:rgba(89, 89, 89, 1);
+
+}
+
+.btn-works{
+  padding: 10px;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #232526;
+  color: #f2f2f2;
+  margin-top: 40px;
+  float: right;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-works:hover{
+  background-color: #A69580;
+  text-decoration: none;
+  color: #232526
+}
+
+/*	end gallery */
+
+
+/* MEDIA QUERYS */
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    .jumbotron {
+        width: 100%;
+        height: auto;
+        
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    .jumbotron {
+        width: 100%;
+        margin: 2px;
+        padding: 0;
+        
+    }
+
+    .jumbotron h1{
+        font-size: 1.6em;
+    }
+    
+    .jumbotron h2{
+        font-size: 1.3em;
+    }
+
+    .jumbotron p{
+        font-size: 1em;
+        width: 100%;
+    }
+    .card {
+      padding: 5px;
+    
+    }
+  }
+
+  
+
+
+
+      
+ 
